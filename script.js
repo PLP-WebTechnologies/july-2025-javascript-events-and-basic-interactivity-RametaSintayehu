@@ -54,3 +54,19 @@ form.addEventListener("submit", (event) => {
   // Optional: reset form
   form.reset();
 });
+
+// FAQ toggle
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const answer = btn.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+
+// Tabs
+function openTab(tabId) {
+  document.querySelectorAll(".tab-content").forEach(tab => {
+    tab.style.display = "none";
+  });
+  document.getElementById(tabId).style.display = "block";
+}

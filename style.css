@@ -15,7 +15,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   background: #005a80;
-  color: #333;
+  color: #fff;
 }
 
 button:hover {
@@ -33,4 +33,50 @@ button:hover {
 
 .success {
   color: green;
+}
+
+/* FAQ Section */
+.faq-answer {
+  display: none;
+  padding: 5px;
+  background: #eee;
+  margin-bottom: 10px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  min-width: 120px;
+}
+.dropdown-content a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+.dropdown-content a:hover {
+  background: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Tabs */
+.tab-btn {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+
+}
+.tab-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
 }
